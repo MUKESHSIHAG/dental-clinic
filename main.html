@@ -1,98 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>header</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="conFusion/node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="conFusion/node_modules/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="conFusion/node_modules/bootstrap-social/bootstrap-social.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <style type="text/css">
-  .footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
-  }
-  </style>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>header</title>
+	    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<style type="text/css">
+	body {
+   margin:0;
+   padding: 0;
+   font-family: 'Roboto', serif;
+}
+.jumbotron{
+  background-color: #4169E1;
+  margin-top: 25px;
+}
+</style>
 </head>
 <body>
-  <div class="jumbotron">
+<header class="jumbotron">
     <div class="container">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="images/index.jpeg" alt="Los Angeles" style="display: block;width:100%;height:360px;">
-          </div>
-          <div class="item ">
-            <img src="images/lg.jpg" alt="New york" style="display: block;width:100%;height:360px;">
-          </div>
-          <div class="item ">
-            <img src="images/text.jpg" alt="New york" style="display: block;width:100%;height:360px;">
-          </div>
-          <div class="item ">
-            <img src="images/my.jpg" alt="New york" style="display: block;width:100%;height:360px;">
-          </div>
+        <div class="row row-header">
+            <div class="col-12 col-sm-3 align-self-center">
+                <img src="img/logo.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm-9">
+                <h1>Ristorante con Fusion</h1>
+                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+            </div>              
         </div>
-      </div>
     </div>
-  </div>
-  <footer class="footer ">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 offset-1 col-sm-2">
-          <h5>Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="./aboutus.html">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-7 col-sm-5">
-          <h5>Our Address</h5>
-          <address>
-            121, Clear Water Bay Road<br>
-            Clear Water Bay, Kowloon<br>
-            HONG KONG<br>
-            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-            <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-          </address>
-        </div>
-        <div class="col-12 col-sm-4 align-self-center">
-          <div class="text-center align-self-center" style="padding-top:20px;">
-            <div id="map" style="width:100%;height:180px;"></div>
-            <script>
-            function myMap() {
-              var mapCanvas = document.getElementById("map");
-              var mapOptions = {
-                center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-              };
-              var map = new google.maps.Map(mapCanvas, mapOptions);
-            }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <p>© Copyright 2018 D3ntalC7inic</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</header>
 </body>
 </html>
